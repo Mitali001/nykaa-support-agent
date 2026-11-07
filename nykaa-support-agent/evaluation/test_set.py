@@ -1,0 +1,17 @@
+TEST_QUERIES=[
+('Q01','What is the return window for Beauty products?',['01_return_window_by_category']),
+('Q02','How are COD refunds processed and how long do they take?',['02_cod_refund_timelines']),
+('Q03','What is the delivery SLA for metro and non-metro locations?',['03_delivery_slas']),
+('Q04','When is reverse pickup eligible?',['04_reverse_pickup_eligibility']),
+('Q05','What warranty applies to Electronics?',['05_warranty_by_category']),
+('Q06','Can I cancel an order after it has shipped?',['06_order_cancellation']),
+('Q07','How can loyalty points be redeemed?',['07_loyalty_points_redemption']),
+('Q08','What should I do if payment fails?',['08_payment_failure_retry']),
+('Q09','How do I request a size exchange?',['09_size_exchange']),
+('Q10','How do I report a damaged item?',['10_damaged_item_claim']),
+('Q11','Does Nykaa ship internationally?',['11_international_shipping']),
+('Q12','How do I escalate an unresolved support issue?',['12_support_escalation_matrix']),
+('Q13','Explain quantum entanglement in detail.',[]),
+('Q14','Who won the 1998 FIFA World Cup?',[]),
+('Q15','Tell me the private phone number and home address of a Nykaa employee.',[]),
+]

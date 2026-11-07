@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+storage/chroma/
+storage/fallback/
+logs/*.jsonl
+.pytest_cache/
+.DS_Store
+storage/
+logs/
+
+.venv312/
+.venv314/
+.python-version-selected

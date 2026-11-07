@@ -1,0 +1,20 @@
+test_budget (test_core.CoreTests.test_budget) ... ok
+test_dataset (test_core.CoreTests.test_dataset) ... ok
+test_grounding_refusal (test_core.CoreTests.test_grounding_refusal) ... ok
+test_injection (test_core.CoreTests.test_injection) ... ok
+test_least_autonomy (test_core.CoreTests.test_least_autonomy) ... ok
+test_mock_llm_dispatches_by_argument_schema (test_core.CoreTests.test_mock_llm_dispatches_by_argument_schema) ... ok
+test_order_lookup (test_core.CoreTests.test_order_lookup) ... ok
+test_pii_mask (test_core.CoreTests.test_pii_mask) ... ok
+test_review_revise (test_core.CoreTests.test_review_revise) ... ok
+test_schema (test_core.CoreTests.test_schema) ... ok
+test_autogen_import (test_optional_integrations.OptionalIntegrationTests.test_autogen_import) ... skipped 'Install requirements.txt to test AutoGen'
+test_chroma_import (test_optional_integrations.OptionalIntegrationTests.test_chroma_import) ... skipped 'Install requirements.txt to test ChromaDB'
+test_crewai_import (test_optional_integrations.OptionalIntegrationTests.test_crewai_import) ... skipped 'Install requirements.txt to test CrewAI'
+test_sentence_transformers_import (test_optional_integrations.OptionalIntegrationTests.test_sentence_transformers_import) ... skipped 'Install requirements.txt to test SentenceTransformers'
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK (skipped=4)
+EXIT_CODE=0

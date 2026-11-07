@@ -1,0 +1,3 @@
+# Python 3.14 profile. CrewAI is intentionally omitted because its published
+# package metadata currently declares Python >=3.10,<3.14.
+-r requirements.txt

@@ -1,0 +1,13 @@
+# Cross-version dependency set for Python 3.12 and 3.14.
+# CrewAI is installed only on Python versions below 3.14 (see PEP 508 marker).
+fastapi
+uvicorn[standard]
+pydantic
+chromadb
+sentence-transformers
+langchain-core
+autogen-agentchat
+autogen-core
+autogen-ext
+httpx
+crewai; python_version < "3.14"

@@ -1,0 +1,16 @@
+{
+  "embedding_backend": "hashing-fallback",
+  "in_scope_top1": {
+    "What is the return window for beauty products?": 0.3287979746107146,
+    "How long does a COD refund take?": 0.15075567228888181,
+    "What is the standard delivery SLA?": 0.23570226039551587,
+    "Can an order be cancelled after it is shipped?": 0.1781741612749496,
+    "How do I claim a damaged item?": 0.2672612419124244
+  },
+  "out_of_scope_top1": {
+    "Explain quantum entanglement in particle physics.": 0.0,
+    "Who won the 1998 FIFA World Cup?": 0.0
+  },
+  "threshold": 0.075378,
+  "clusters_separated": true
+}

@@ -1,0 +1,17 @@
+{
+  "approved_case": {
+    "approved": true,
+    "final_answer": "COD refunds follow the supported refund method and provider processing timeline.",
+    "reason": "Draft claims are consistent with the retrieved policy context."
+  },
+  "revised_case": {
+    "approved": false,
+    "final_answer": "COD refunds follow the supported refund method.",
+    "reason": "Removed an unsupported claim; final answer is restricted to retrieved policy evidence."
+  },
+  "execution_status": "deterministic fallback used (ModuleNotFoundError)"
+}
+
+STDERR:
+
+EXIT_CODE=0

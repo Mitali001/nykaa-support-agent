@@ -1,0 +1,38 @@
+{
+  "record_count": 50,
+  "seed": 42,
+  "category_weights": [
+    20,
+    15,
+    15,
+    15,
+    35
+  ],
+  "status_weights": [
+    15,
+    25,
+    35,
+    15,
+    10
+  ],
+  "amount_range_inr": [
+    199,
+    14999
+  ],
+  "category_counts": {
+    "Apparel": 10,
+    "Beauty": 22,
+    "Electronics": 4,
+    "Footwear": 7,
+    "Home": 7
+  },
+  "status_counts": {
+    "Delivered": 20,
+    "Placed": 8,
+    "Refunded": 3,
+    "Returned": 5,
+    "Shipped": 14
+  },
+  "delayed_count": 11,
+  "delayed_percentage": 22.0
+}

@@ -1,0 +1,74 @@
+{
+  "threshold": 0.075378,
+  "embedding_backend": "hashing-fallback",
+  "demonstrations": [
+    {
+      "query": "What is the return window for Beauty products?",
+      "answer": "Apparel, footwear, and home products may be requested for return within the category window shown on the order page. The order-specific listing and invoice terms take precedence when t Size exchange is available only for eligible products, sizes, locations, and stock availability. The agent should verify the exact SKU terms Reverse pickup is offered only for eligible pin codes and eligible return reasons.",
+      "grounded": true,
+      "top1_similarity": 0.3287979746107146,
+      "sources": [
+        "01_return_window_by_category",
+        "04_reverse_pickup_eligibility",
+        "05_warranty_by_category",
+        "09_size_exchange"
+      ]
+    },
+    {
+      "query": "How long does a COD refund take?",
+      "answer": "The order-specific listing and invoice terms take precedence when t An order can generally be cancelled only while it remains in a cancellable fulfilment stage. Any refund for a successful prepaid cancellation follows the payment provider's processing timeline. The order-specific listing and invoice terms take precedence when they are more restrictive.",
+      "grounded": true,
+      "top1_similarity": 0.15075567228888181,
+      "sources": [
+        "01_return_window_by_category",
+        "06_order_cancellation",
+        "10_damaged_item_claim"
+      ]
+    },
+    {
+      "query": "What is the delivery SLA?",
+      "answer": "The estimated delivery date is displayed on the product page and again in the order details after checkout. The agent must not invent a delivery date when tracking information is unavailable. invent a delivery date when tracking information is unavailable.",
+      "grounded": true,
+      "top1_similarity": 0.2886751345948129,
+      "sources": [
+        "03_delivery_slas",
+        "06_order_cancellation",
+        "11_international_shipping"
+      ]
+    },
+    {
+      "query": "Can an order be cancelled after shipment?",
+      "answer": "An order can generally be cancelled only while it remains in a cancellable fulfilment stage. Once the shipment has been handed to the courier, cancellation may no longer be available and the customer may need to use the eligible return process after delivery. The agent must check the live order state before confirming The estimated delivery date is displayed on the product page and again in the order details after checkout.",
+      "grounded": true,
+      "top1_similarity": 0.2672612419124244,
+      "sources": [
+        "01_return_window_by_category",
+        "02_cod_refund_timelines",
+        "03_delivery_slas",
+        "06_order_cancellation"
+      ]
+    },
+    {
+      "query": "How do I claim a damaged item?",
+      "answer": "Orders with a high escalation score, a delivery delay beyond the expected window, a disputed payment, or a damaged-item claim requiring human review should be referred to the appropriate support queue. A customer who receives a damaged or incorrect item should report the issue through the order support flow as soon as possible. The agent must not guarantee claim approval before the review i Routine policy questions and standard tracking explanations can be handled by the automated support agent when the knowledge base provides a clear answer.",
+      "grounded": true,
+      "top1_similarity": 0.2672612419124244,
+      "sources": [
+        "09_size_exchange",
+        "10_damaged_item_claim",
+        "12_support_escalation_matrix"
+      ]
+    },
+    {
+      "query": "Explain quantum entanglement in particle physics.",
+      "answer": "I don't know based on the available Nykaa support knowledge base.",
+      "grounded": false,
+      "top1_similarity": 0.0,
+      "sources": []
+    }
+  ]
+}
+
+STDERR:
+
+EXIT_CODE=0

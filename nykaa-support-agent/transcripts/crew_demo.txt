@@ -1,0 +1,38 @@
+{
+  "retrieval_tool_invocation": {
+    "calls": 1,
+    "sources": [
+      "01_return_window_by_category",
+      "04_reverse_pickup_eligibility",
+      "05_warranty_by_category",
+      "09_size_exchange"
+    ]
+  },
+  "lookup_tool_invocation": {
+    "calls": 1,
+    "result": {
+      "found": true,
+      "record_id": "NYK0001",
+      "status": "Placed",
+      "order_value_inr": 4705,
+      "days_since_created": 7,
+      "delayed_shipment": false,
+      "escalation_score": 0.093,
+      "escalate": false
+    }
+  },
+  "escalation_design": {
+    "formula": "0.60 * delayed_shipment(0/1) + 0.40 * (days_since_created / 30)",
+    "threshold": 0.907,
+    "dataset_days_p80": 23,
+    "interpretation": "Threshold equals 0.60 + 0.40*(P80/30) = 0.907; it is the composite score for a delayed order whose age is at the dataset's 80th-percentile recency (23 days)."
+  },
+  "crewai_kickoff": {
+    "executed": false,
+    "reason": "RuntimeError: CrewAI not installed. Install requirements.txt to run the real CrewAI crew."
+  }
+}
+
+STDERR:
+
+EXIT_CODE=0

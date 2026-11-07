@@ -1,0 +1,42 @@
+{
+  "fallback_session_memory": {
+    "fresh_before": [],
+    "after_turn_1": [
+      {
+        "role": "user",
+        "content": "My order is NYK0001"
+      },
+      {
+        "role": "assistant",
+        "content": "Order NYK0001 is shipped."
+      }
+    ],
+    "after_turn_2": [
+      {
+        "role": "user",
+        "content": "My order is NYK0001"
+      },
+      {
+        "role": "assistant",
+        "content": "Order NYK0001 is shipped."
+      },
+      {
+        "role": "user",
+        "content": "What is its status?"
+      },
+      {
+        "role": "assistant",
+        "content": "It is shipped."
+      }
+    ],
+    "separate_session": []
+  },
+  "langchain_runnable_with_message_history": {
+    "available": false,
+    "reason": "RuntimeError: Install langchain-core to use RunnableWithMessageHistory"
+  }
+}
+
+STDERR:
+
+EXIT_CODE=0
