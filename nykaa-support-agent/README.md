@@ -130,30 +130,3 @@ The escalation score is `0.60 * delayed_shipment + 0.40 * (days_since_created / 
 | 15 least autonomy, medium risk, request budget | `governance/` |
 | 16 normalized-query response cache | `service.py` |
 
-## Known boundaries and honest verification notes
-
-1. This is a learning capstone prototype, not a production Nykaa service. The KB policies are invented from the assignment topic list, and the dataset is synthetic.
-2. The deterministic `MOCK_LLM` uses evidence selection and rule-based review/scoring, not semantic reasoning. The 15-query judge scores are transparent rule-based proxies, not human ratings or a genuine LLM-as-judge.
-3. The similarity threshold must be calibrated on your runtime's actual embedding backend by `python -m rag.calibrate`; inspect `rag/threshold.json` and the recorded values before reporting it. Do not reuse a threshold measured with hashing fallback as a SentenceTransformer threshold.
-4. For complete framework acceptance, install the pinned dependencies and verify that the CrewAI and AutoGen integration tests execute rather than skip. Framework APIs can change; if the installed versions differ, resolve integration failures and regenerate transcripts before submitting.
-5. The browser UI smoke-tested successfully against the FastAPI test client in the packaging environment. The four optional integrations (CrewAI, AutoGen, ChromaDB and SentenceTransformers) were not installed in that environment, so the UI deliberately labels their status as optional/fallback rather than claiming successful live execution. Install the pinned requirements and rerun the optional integration tests before final capstone submission.
-6. No public GitHub repository is created by this ZIP. Create one public repository, push this folder, then submit that single URL.
-
-## Governance and privacy
-
-Only fabricated data is used. Phone numbers and card-last-four patterns are masked before model input and before JSONL logging. Customer names and delivery addresses are not reliably masked in keyless mode and must remain synthetic. The system is classified **Medium risk**: customer-support assistance can mislead or inconvenience customers, but it does not make medical, hiring, credit, or other high-impact decisions. Human escalation is recommended for unresolved or high-risk cases.
-
-## Publish the single required GitHub repository
-
-Create one **public** empty GitHub repository named `nykaa-support-agent`, then from this folder run:
-
-```bash
-git init
-git add .
-git commit -m "Complete Nykaa CrewAI support agent capstone"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/nykaa-support-agent.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username. Submit only the resulting public repository URL. Do not commit `.env`, virtual environments, local vector-store data, or request logs.
