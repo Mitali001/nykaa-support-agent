@@ -1,15 +1,36 @@
-.venv/
-__pycache__/
-*.py[cod]
-.env
-storage/chroma/
-storage/fallback/
-logs/*.jsonl
-.pytest_cache/
-.DS_Store
-storage/
-logs/
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
 .venv312/
 .venv314/
-.python-version-selected
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local vector stores
+chroma_db/
+.chroma/
+vector_store/
+.vectordb/
+
+# Request and application logs
+logs/
+request_logs/
+*.log
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
